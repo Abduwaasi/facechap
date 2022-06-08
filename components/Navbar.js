@@ -1,15 +1,20 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import Head from "next/head"
 import {FaInstagram, FaTwitter,FaLinkedin,FaFacebook,FaBars,FaTimes} from "react-icons/fa"
 import MobileDrawer from "./MobileDrawer"
 
-import logo from "/public/images/LightLogo.png"
+import logo from "/public/images/Lightlogo.png"
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   return (
-    <nav className=" w-full   flex h-[100px] justify-between items-center sticky top-0 z-20 bg-white">
+    <>
+    <Head>
+      <title>Pagechap</title>
+    </Head>
+      <nav className=" w-full   flex h-[100px] justify-between items-center sticky top-0 z-20 bg-white">
      <Link href="/">
          <Image src={logo} width={150} height={30} alt="logo"/>
      </Link>
@@ -34,6 +39,8 @@ const Navbar = () => {
        <MobileDrawer/>
      </div>}
     </nav>
+    </>
+    
   )
 }
 
