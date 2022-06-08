@@ -1,9 +1,9 @@
 import React from 'react'
-import {FaInstagram, FaTwitter,FaLinkedin,FaFacebook,FaBars} from "react-icons/fa"
+import {FaInstagram, FaTwitter,FaLinkedin,FaFacebook} from "react-icons/fa"
 
 const MobileDrawer = () => {
   return (
-    <div className=' w-full h-screen mt-6 bg-white mx-auto flex  flex-col justify-start items-center'>
+    <div className=' w-full h-screen mt-6 bg-white mx-auto flex  flex-col justify-start items-center dark:bg-[#000A0F]'>
       <h2 className='text-transparent  bg-clip-text bg-gradient-to-r 
         from-[#E6145B]  to-[#7E48A5] text-[2rem] capitalize font-bold'> Social Media</h2>
       <div>
